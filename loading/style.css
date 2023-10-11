@@ -1,0 +1,53 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+}
+
+.container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.box {
+        width: 500px;
+        height: 50px;
+        background-color: aqua;
+        border-radius: 20px;
+        animation: loading 5s ease-in-out infinite;
+}
+
+
+@keyframes loading {
+
+        0% {
+                background-color: green;
+        }
+
+        20% {
+                background-color: greenyellow;
+        }
+
+        40%{
+                background-color: grey;
+        }
+        60%{
+                background-color: goldenrod;
+        }
+        80%{
+                background-color: greenyellow;
+        }
+        100% {
+                background-color: green;
+        }
+
+}
